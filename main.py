@@ -6,7 +6,7 @@ import plotly.express as px
 import streamlit as st
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from src.pipeline import DEFAULT_FEATURES, TARGET, build_pipeline, evaluate_model, make_demo_data, split_xy
+from pipeline import DEFAULT_FEATURES, TARGET, build_pipeline, evaluate_model, make_demo_data, split_xy
 
 st.set_page_config(page_title='Student Insights Pro', page_icon='🎓', layout='wide')
 st.markdown('''<style>
